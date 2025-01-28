@@ -1,0 +1,193 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 96%;
+    height: 100vh;
+    /* border: 2px solid orange; */
+    margin:auto;
+    display: flex;
+    background-color:whitesmoke;
+    box-shadow: 2px 2px 5px rgb(160, 157, 157);
+}
+
+.item{
+    width: 50%;
+    /* border: 2px solid red; */
+    height: 98%;
+    /* margin: 2px; */
+    
+}
+#item1{
+    padding: 20px;
+    height: 100%;
+    background-color: rgb(28, 28, 78);
+    /* border: 2px solid green; */
+}
+#item1 p{
+    background-color: whitesmoke;
+    border-radius: 2px;
+    margin: 5px auto;
+
+}
+.imgdiv{
+    border-radius: 2px;
+    background-image: url(./4884785.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 38%;
+    /* border: 2px solid red; */
+}
+#item2{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.subdiv{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    /* text-align: center; */
+    /* border: 2px solid blue;     */
+}
+.subdiv div{
+    display: flex;
+    flex-direction: column;
+}
+#item2 h1{
+    font-size: 30px;
+    margin: 0;
+    text-align: start;
+}
+
+input{
+    height: 25px;
+    width: 95%;
+    margin: 5px 2px;
+    padding: 2px;
+}
+
+.btn{
+    height: 25px;
+    width: 170px;
+    margin: 5px 2px;
+    padding: 2px;
+    border-radius: 5px;
+    border: none;
+}
+#butn1{
+    background-color: white;
+    border: 1px solid black;
+}
+#butn2{
+    background-color: rgb(28, 28, 78);
+
+}
+#butn1:hover{
+    background-color: rgb(28, 28, 78) ;
+    color: white;
+    transition: .3s all ease-in-out;
+}
+#butn2:hover{
+    background-color: transparent ;
+    color: black;
+    border: 1px solid black;
+    transition: .3s all ease-out;
+}
+
+@media only screen and (max-width:438px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    #item1{
+        display: none;
+    }
+    #item2{
+        width: 100%;
+        /* display: flex; */
+        /* align-items: center; */
+    }
+    .subdiv{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0;
+    }
+    .subdiv div{
+        /* display: flex; */
+        /* flex-direction: column; */
+        margin: 0;
+    }
+    .btn{
+        width:150px;
+    }
+    #butn1:hover{
+        background-color: rgb(28, 28, 78) ;
+        color: white;
+        transition: .3s all ease-in-out;
+    }
+    #butn2:hover{
+        background-color: transparent ;
+        color: black;
+        border: 1px solid black;
+        transition: .3s all ease-out;
+    }
+}
+@media only screen and (min-width:438px) and (max-width:820px){
+    .container{
+        display:flex;
+        flex-direction:column;
+        width: 100%;
+        /* border: 2px solid blue; */
+    }
+    #item1{
+        display: none;
+    }
+
+    #item2{
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    .subdiv{
+        /* width: 100%; */
+        display: flex;
+        /* flex-direction: column; */
+        align-items: flex-start;
+    }
+    .subdiv div{
+        display: flex;
+        flex-direction: column;
+
+    }
+    input{
+        width: 98%;
+    }
+    #bt1{
+        display: flex;
+        /* flex-direction: column; */
+    }
+
+    .btn{
+        width:200px;      
+
+    }
+    #butn1:hover{
+        background-color: rgb(28, 28, 78) ;
+        color: white;
+        transition: .3s all ease-in-out;
+    }
+    #butn2:hover{
+        background-color: transparent ;
+        color: black;
+        border: 1px solid black;
+        transition: .3s all ease-out;
+    }
+
+}
